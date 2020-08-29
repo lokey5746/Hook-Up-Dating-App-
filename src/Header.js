@@ -5,6 +5,7 @@ import IconButton from "@material-ui/core/IconButton";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import "./Header.css";
 import { Link, useHistory } from "react-router-dom";
+import Hook from "./Hook Up.png";
 
 const Header = ({ backButton }) => {
   const history = useHistory();
@@ -20,11 +21,7 @@ const Header = ({ backButton }) => {
         </IconButton>
       )}
       <Link to="/">
-        <img
-          className="header__logo"
-          src="https://1000logos.net/wp-content/uploads/2018/07/tinder-logo.png"
-          alt="tinder logo"
-        />
+        <img className="header__logo" src={Hook} alt="tinder logo" />
       </Link>
       <Link to="/chat">
         <IconButton>
